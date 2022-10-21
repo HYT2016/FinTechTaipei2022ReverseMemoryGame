@@ -116,7 +116,7 @@ body {
 .title-text2 {
   font-size: 6vmin;
   -webkit-text-stroke: 2.0px #6D5A1F;
-  text-shadow: 0px 0px 15px #6D5A1F;
+  text-shadow: 0px 0px 3px #6D5A1F;
   letter-spacing: 5px;
   font-family: "Inconsolata", monospace;
   color: #eed920;
