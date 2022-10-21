@@ -1,0 +1,29 @@
+{
+    auto_https disable_redirects
+}
+  
+
+localhost {
+    redir /anti /anti/
+    handle_path /anti/* {
+        root * ./tpex_game/static_page
+        file_server {
+            index game.html
+        }
+    }
+    
+    redir /lottery /lottery/
+    handle_path /lottery/* {
+        root * ./lottery
+        file_server
+    }
+
+    redir /game /game/
+    handle_path /game/* {
+        root * ./MemoryGame_Stock
+        file_server
+    }
+
+}
+
+

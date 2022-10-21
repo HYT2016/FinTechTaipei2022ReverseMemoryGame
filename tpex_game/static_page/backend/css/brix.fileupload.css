@@ -1,0 +1,61 @@
+@charset "UTF-8";
+.bx-attachment-list .attachment-item {
+    margin-bottom:15px;
+    width: 170px;
+    text-align: center;
+}
+/*.bx-attachment-list .attachment-item .url-preview{*/
+    /*text-align: center;*/
+    /*margin-top: 5px;*/
+/*}*/
+.bx-attachment-list .attachment-item img{
+    max-width:100px;
+    height:90px;
+    margin: 0px auto;
+}
+.form-group .attachment-item .fa {
+    margin-top: 5%;
+}
+.form-group .attachment-item .text-slg {
+    margin: 10px 35%;
+    font-size: 50px;
+}
+
+.bx-attachment-list .attachment-item .btn-remove {
+    position: absolute;
+    top:1px;
+    right:12px;
+    z-index: 10;
+    height: 25px;
+}
+
+.bx-attachment-list .attachment-item .btn-remove-product {
+    position: absolute;
+    top:1px;
+    right:-24px;
+    z-index: 10;
+    height: 25px;
+}
+
+#bx-attachment-list .list-group {
+    min-height:5px;
+}
+.sort-group .sort-group-head {
+    margin-bottom:10px;
+}
+#bx-attachment-list .sortable-ghost {
+    background:#7f8c8d;
+}
+#bx-attachment-list .sortable-chosen {
+    background:#f7ecb5;
+}
+/*** 修正顏色 鐵灰改為白色 ***/
+span.fa.fa-close, .removeBtn > span {
+    color: #FFFFFF;
+}
+
+/*** 修正欄位排版會偏上的問題 ***/
+/*.attach-padding > div a {*/
+/*    text-align: center;*/
+/*    margin-top: 5px;*/
+/*}*/

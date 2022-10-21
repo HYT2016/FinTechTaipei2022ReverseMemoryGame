@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  /* display: flex; */
+  /* background: #d1c4a6; */
+  background-image: url("./img/mosquito/FinTech2022-GameBackground2.png");
+}
+
+.memory-game {
+  /* width: 740px;
+  height: 740px; */
+  margin: 0;
+  width: 85vw;
+  height: 75vh;
+
+  /* width: 100px; */
+  /* height: 100px; */
+  /* margin: auto; */ /* 0822 cancel */ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  perspective: 1000px;
+
+  /* 0822 add */
+  position: relative;
+  top: 14%;  
+  left: 50%;
+  /* top: 35vh;
+  left: 50vw; */
+  transform: translate(-50%, 0%);
+}
+
+.memory-card {
+  /* width: calc(25% - 10px); */
+  /* height: calc(33.333% - 10px); */
+  /* width: calc(23% - 10px);
+  height: calc(25.333% - 10px); */
+  width: calc(33% - 10px);
+  height: calc(25.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  /* box-shadow: 1px 1px 1px rgba(0,0,0,.3); */
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  position: absolute;
+  /* background: #d19c09; */
+  backface-visibility: hidden;
+  border-radius: 15%;
+  border: 0.25em solid #6D5A1F;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+
+
+/* 0822 add */
+.back-face:hover {
+  /* border: 3px groove hsl(0, 0%, 0%); */
+  transform: scale(1.1);
+  /* box-shadow:
+        0 0 30px 15px #fff,
+        0 0 50px 30px #f0f,
+        0 0 70px 45px #0ff; */
+  z-index: 10;
+  /* background: #d19c09; */
+  cursor: pointer;
+}
+
+
+
+.title-text {
+  font-size: 8vmin;
+  -webkit-text-stroke: 2.0px #6D5A1F;
+  text-shadow: 0px 0px 15px #6D5A1F;
+  letter-spacing: 5px;
+  font-family: "Inconsolata", monospace;
+  color: #eed920;
+  /* position: relative; */
+  position: absolute;
+  top: 5vh;  
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  /* padding: 4%; */
+  margin: 0;
+}
+.title-text2 {
+  font-size: 6vmin;
+  -webkit-text-stroke: 2.0px #6D5A1F;
+  text-shadow: 0px 0px 15px #6D5A1F;
+  letter-spacing: 5px;
+  font-family: "Inconsolata", monospace;
+  color: #eed920;
+  /* position: relative; */
+  position: absolute;
+  top: 10vh;  
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  /* padding: 4%; */
+  margin: 0;
+}
+
+
+
+.restart{
+  outline-style: none ;
+  /* border: 1px solid #ccc;  */
+  cursor: pointer;
+  background-color: #C3A337;
+  border-radius: 8px;
+  padding: 14px 14px;
+  width: 300px;
+  font-size: 36px;
+  font-family: "Microsoft soft";
+  position: absolute;
+  /* top: 50%;  
+  left: -300%; 
+  transform: translate(-50%, -50%); */
+  /* top: 0vh;   */
+  bottom: 5vh;
+  left: 50vw;
+  transform: translate(-50%, 0%);
+}
+
+.restart:hover {
+  background-color: #6D5A1F;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  color: #EA2B1F;
+}
+
+.modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* height: auto;
+  width: auto; */
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-text {
+  /* background-image: url("img/background.gif"); */
+  font-family: "Inconsolata", monospace;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  height: 400px;
+  width: 2000px;
+}
+
+.hidden {
+  display: none;
+}
+
+.playAgain{
+  outline-style: none ;
+  /* border: 1px solid #ccc;  */
+  cursor: pointer;
+  background-color: #C3A337;
+  border-radius: 8px;
+  padding: 14px 14px;
+  width: 500px;
+  font-size: 36px;
+  font-family: "Microsoft soft";
+  position: absolute;
+  /* top: 50%;  
+  left: -300%; 
+  transform: translate(-50%, -50%); */
+  /* top: 0vh;   */
+  bottom: 40vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.playAgain:hover {
+  background-color: #6D5A1F;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  color: #EA2B1F;
+}
+
+/* input:active {
+  background-color: #6D5A1F;
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
+}  */
+
+
+.reset {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.75rem;
+  height: 50px;
+  width: 250px;
+  background-color: #C3A337;
+  border-width: 0;
+  border-radius: 10px;
+  border: 0.5px ridge black;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  top: 50%;  
+  left: -30%;
+  transform: translate(-50%, -50%);
+}
+
+.pass{
+  text-align: center;
+  font-family: "Inconsolata";
+  position: relative;
+  top: 50vh;  
+  left: 50vw;
+  transform: translate( -10%, -10%);
+}
+
+.pass-text {
+  font-size: 8vmin;
+  text-shadow: 0.08em 0.08em #555555;
+  letter-spacing: 10px;
+  font-family: "Inconsolata", monospace;
+  color: #eed920;
+  position: relative;
+  top: 20%;  
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer-text {
+  font-size: 4vmin;
+  -webkit-text-stroke: 1.2px #6D5A1F;
+  letter-spacing: 5px;
+  font-family: "Inconsolata", monospace;
+  color: #eed920;
+  position: absolute;
+  top: 13vh;  
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  /* padding: 4%; */
+  margin: 0;
+}
+
+.timer {
+  display:inline;
+}
+
+
+
+/* .reset span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.reset span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.reset:hover {
+  background-color: #6D5A1F;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  color: #EA2B1F;
+}
+
+.reset:hover span {
+  padding-right: 25px;
+}
+
+.reset:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.reset:active {
+  background-color: #6D5A1F;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+} */
+

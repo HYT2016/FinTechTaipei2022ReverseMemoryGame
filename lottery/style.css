@@ -1,0 +1,93 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  letter-spacing: 1px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  /* transition-duration: 1s; */
+}
+body {
+    /* background-color: rgb(232, 201, 133); */
+    background-image: url("./img/mosquito/FinTech2022-GameBackground.png");
+}
+
+.center {
+  text-align: center;
+}
+
+.title-text {
+  font-size: 10vmin;
+  text-shadow: 0.04em 0.04em #AAAAAA;
+  letter-spacing: 5px;
+  font-family: "Inconsolata", monospace;
+  color: #52451b;
+  position: relative;
+  /* position: absolute; */
+  top: 15vh;  
+  /* left: 50vw; */
+  /* transform: translate(-50%, -50%); */
+  padding: 0;
+  margin: 0;
+}
+
+.qrcode {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+}
+
+.message {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  bottom: 60%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  font-size: 5vmin;
+  text-shadow: 0.04em 0.04em #AAAAAA;
+  letter-spacing: 1px;
+  font-family: "Inconsolata", monospace;
+  color: #52451b;
+  width: 55vw;  
+  text-align: center;
+  font-weight: 900;
+}
+
+
+
+/*0929 play again btn*/
+.playAgain{
+  outline-style: none ;
+  /* border: 1px solid #ccc;  */
+  cursor: pointer;
+  background-color: #C3A337;
+  border-radius: 8px;
+  padding: 14px 14px;
+  width: 500px;
+  font-size: 36px;
+  font-family: "Microsoft soft";
+  position: absolute;
+  /* top: 50%;  
+  left: -300%; 
+  transform: translate(-50%, -50%); */
+  /* top: 0vh;   */
+  bottom: 40vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.playAgain:hover {
+  background-color: #6D5A1F;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  color: #EA2B1F;
+}

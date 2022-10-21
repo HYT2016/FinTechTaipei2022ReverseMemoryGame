@@ -1,0 +1,136 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>Memory Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title-text">櫃買對對碰</h1>
+
+    <h2 class="timer-text">
+        剩餘時間：<p class="timer">600</p>
+    </h2>
+
+    <!-- 0822 add -->
+    <!-- <div class="matches">
+        <h4 class="matches-text">Matches:</h4>
+    </div>
+
+    <div class="matches">
+        <h4 class="matches-score">0</h4>
+    </div> -->
+
+    
+
+
+    <section class="memory-game">
+        <div class="memory-card" data-framework="leia">
+            <img class="front-face" src="" alt="A">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="leia">
+            <img class="front-face" src="" alt="A">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="luke">
+            <img class="front-face" src="" alt="B">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="luke">
+            <img class="front-face" src="" alt="B">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="padme">
+            <img class="front-face" src="" alt="C">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="padme">
+            <img class="front-face" src="" alt="C">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="vader">
+            <img class="front-face" src="" alt="D">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="vader">
+            <img class="front-face" src="" alt="D">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="yoda">
+            <img class="front-face" src="" alt="E">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="yoda">
+            <img class="front-face" src="" alt="E">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="emperor">
+            <img class="front-face" src="" alt="F">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="emperor">
+            <img class="front-face" src="" alt="F">
+            <img class="back-face" src="../img/mosquito/CardBackground.4.png" alt="Memory Card">
+        </div>
+
+
+        <!-- <div class="memory-card" data-framework="chewbacca">
+            <img class="front-face" src="" alt="G">
+            <img class="back-face" src="img/tpex_card_background.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="chewbacca">
+            <img class="front-face" src="" alt="G">
+            <img class="back-face" src="img/tpex_card_background.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="docker-logo">
+            <img class="front-face" src="" alt="H">
+            <img class="back-face" src="img/tpex_card_background.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="docker-logo">
+            <img class="front-face" src="" alt="H">
+            <img class="back-face" src="img/tpex_card_background.png" alt="Memory Card">
+        </div> -->
+    
+
+    </section>
+
+
+
+
+    
+    <!-- 0831Hidden Restart button  -->
+    <!-- <div class="input">
+        <Input class="restart" Type="Button" Value="Restart !!!" onClick="window.location.reload();">
+    </div> -->
+
+    <div class="modal hidden">
+        <div class="modal-text">
+          <span class="close">&times;</span>
+          <h3 class="pass-text">Congratulations! You have won!!!</h3>
+            <!-- <div class="pass"> -->
+                
+            <!-- </div>  -->
+        </div>
+        
+    </div>
+    <!-- <Input class="playAgain hidden" Type="Button" Value="Play Again !!!" onClick="window.location.reload();"> -->
+    <!-- 0830 Jump to 反詐騙宣導-->
+    <Input class="playAgain hidden" Type="Button" Value="反詐騙gogogo !!!" onClick="location.href='https://www.figma.com/proto/B1Rqm2jwEoVxqqX2qWFMAN/2022_0926%E6%AB%83%E8%B2%B7%E5%8F%8D%E6%8A%95%E8%B3%87%E8%A9%90%E9%A8%99%E6%B4%BB%E5%8B%95%E7%B6%B2%E7%AB%99?page-id=52%3A52&node-id=122%3A1167&viewport=1147%2C186%2C0.24&scaling=min-zoom&starting-point-node-id=122%3A1167'">
+        
+
+
+
+
+        <!-- 0826 add to jump another html -->
+    <!-- <input type="button" name="Submit" value="the other memory game" class="playAgain hidden" onclick="location.href='index.html'" /> -->
+
+        
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
