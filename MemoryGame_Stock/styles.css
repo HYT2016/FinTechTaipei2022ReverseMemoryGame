@@ -12,8 +12,8 @@
 body {
   height: 100vh;
   /* display: flex; */
-  /* background: #d1c4a6; */
-  background-image: url("./img/mosquito/FinTech2022-GameBackground2.png");
+  background: #DEFFDE;
+  /* background-image: url("./img/mosquito/FinTech2022-GameBackground2.png"); */
 }
 
 .memory-game {
