@@ -114,12 +114,12 @@ body {
   margin: 0;
 }
 .title-text2 {
-  font-size: 6.5vmin;
-  -webkit-text-stroke: 0.5px #eed920;
+  font-size: 6vmin;
+  -webkit-text-stroke: 0.8px #676A3B;
   /* text-shadow: 0px 0px 3px #6D5A1F; */
   letter-spacing: 5px;
   font-family: "Inconsolata", monospace;
-  color: #EA0000;
+  color: #FFFBE6;
   /* position: relative; */
   position: absolute;
   top: 11vh;  
