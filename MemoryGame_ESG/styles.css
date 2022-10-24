@@ -122,7 +122,7 @@ body {
   color: #eed920;
   /* position: relative; */
   position: absolute;
-  top: 10vh;  
+  top: 11vh;  
   left: 50vw;
   transform: translate(-50%, -50%);
   text-align: center; 
