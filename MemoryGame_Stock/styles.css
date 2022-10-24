@@ -12,8 +12,8 @@
 body {
   height: 100vh;
   /* display: flex; */
-  /* background: #69828C; */
-  background-image: url("./img/mosquito/darkBlue.jpg");
+  /* background: #000000; */
+  background-image: url("./img/mosquito/darkGreen.jpg");
 }
 
 .memory-game {
